@@ -1,14 +1,15 @@
-//
-//  main.c
-//  ObjectiveK2
-//
-//  Created by Uli Kusterer on 08.05.21.
-//
-
 #include <stdio.h>
+#include "objk_runtime.h"
+#include "objk_msgsend.h"
 
 int main(int argc, const char * argv[]) {
-	// insert code here...
-	printf("Hello, World!\n");
+	struct _OKString objStorage = { .super = { NULL }, .str = "SpecialK" };
+	OKObject obj = &objStorage.super;
+	OKObject result = ((OKObject(*)(OKObject,OKMsg,int))objK_msgSend)(obj, "showString:", 42);
+	if (result == obj) {
+		printf("Result returning works!\n");
+	} else {
+		printf("ERROR: Result damaged (%p ≠ %p).\n", obj, result);
+	}
 	return 0;
 }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5543DBAD2646BE7C00CBD0A2 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5543DBAC2646BE7C00CBD0A2 /* main.c */; };
+		5543DBB52646BE9D00CBD0A2 /* objk_msgsend.s in Sources */ = {isa = PBXBuildFile; fileRef = 5543DBB42646BE9D00CBD0A2 /* objk_msgsend.s */; };
+		5543DBB82646BF5500CBD0A2 /* objk_runtime.c in Sources */ = {isa = PBXBuildFile; fileRef = 5543DBB72646BF5500CBD0A2 /* objk_runtime.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,11 @@
 /* Begin PBXFileReference section */
 		5543DBA92646BE7C00CBD0A2 /* ObjectiveK2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjectiveK2; sourceTree = BUILT_PRODUCTS_DIR; };
 		5543DBAC2646BE7C00CBD0A2 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		5543DBB32646BE9D00CBD0A2 /* objk_msgsend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = objk_msgsend.h; sourceTree = "<group>"; };
+		5543DBB42646BE9D00CBD0A2 /* objk_msgsend.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = objk_msgsend.s; sourceTree = "<group>"; };
+		5543DBB62646BF5500CBD0A2 /* objk_runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = objk_runtime.h; sourceTree = "<group>"; };
+		5543DBB72646BF5500CBD0A2 /* objk_runtime.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = objk_runtime.c; sourceTree = "<group>"; };
+		5543DBB92646E7F000CBD0A2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +48,7 @@
 		5543DBA02646BE7C00CBD0A2 = {
 			isa = PBXGroup;
 			children = (
+				5543DBB92646E7F000CBD0A2 /* README.md */,
 				5543DBAB2646BE7C00CBD0A2 /* ObjectiveK2 */,
 				5543DBAA2646BE7C00CBD0A2 /* Products */,
 			);
@@ -58,6 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				5543DBAC2646BE7C00CBD0A2 /* main.c */,
+				5543DBB62646BF5500CBD0A2 /* objk_runtime.h */,
+				5543DBB72646BF5500CBD0A2 /* objk_runtime.c */,
+				5543DBB32646BE9D00CBD0A2 /* objk_msgsend.h */,
+				5543DBB42646BE9D00CBD0A2 /* objk_msgsend.s */,
 			);
 			path = ObjectiveK2;
 			sourceTree = "<group>";
@@ -118,7 +130,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5543DBB82646BF5500CBD0A2 /* objk_runtime.c in Sources */,
 				5543DBAD2646BE7C00CBD0A2 /* main.c in Sources */,
+				5543DBB52646BE9D00CBD0A2 /* objk_msgsend.s in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
